@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>nopCommerce</title>
+
+  <!-- 3rd party css \-->
+  <link rel="stylesheet" type="text/css" href="3rd/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-brands.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-regular.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-solid.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fontawesome-all.min.css">
+
+  <!-- 3rd party js -->
+  <script src="3rd/jquery.js"></script>
+  <script src="3rd/popper.min.js"></script>
+  <script src="3rd/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- own css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- own js -->
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row" id="wrap-top-nav">
+      <div class="col-md-2 col-sm-0 d-md-block d-none mh-100 align-middle" id="main-banner">
+        <div class="mh-100 align-middle" id="wrap-main-banner">
+          <img src="img/logo.png" class="d-inline-block mh-100 rounded-circle">
+          <h5 class="d-inline mh-100 align-middle text-white">nopCommerce</h5>
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-12 mh-100 align-middle d-inline-block" id="main-nav">
+        <ul id="main-nav-sub" class="d-inline-block float-right">
+          <li class="text-white">John Smith</li>
+          <li class="">
+            <a href="javascript:void(0)" class="text-white">Logout</a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class="fas fa-cogs text-white"></a>
+          </li>
+        </ul>
+        <a id="btnCollapse" href="javascript:void(0)" class="d-table-cell align-middle fas fa-bars fa-sm text-white"></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-sm-0 d-md-block d-none" id="left-nav">
+        <ul>
+          <li>
+            <div class="form-group" id="search-box">
+              <label for="txtSearch"><i class="fas fa-search"></i></label>
+              <input type="email" class="form-control" id="txtSearch" placeholder="Search">
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-desktop"></b>
+              Dashboard
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-book"></b>
+              Catalog
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-shopping-cart"></b>
+              Sales
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-user"></b>
+              Customers
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-tags"></b>
+              Promotions
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-cubes"></b>
+              Content management
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-cogs"></b>
+              Configuration
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content (Right) -->
+      <div class="col-md-10 col-sm-12" id="main-content">
+
+
+        <h2 class="float-left">Products</h2>
+        <div class="float-right" id="main-action-btn">
+          <button class="btn btn-primary"><i class="fas fa-plus-square"></i>Add</button>
+          <button class="btn btn-info"><i class="fas fa-file-pdf"></i>Download catalog as PDF</button>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i>Export</button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-warning"><i class="fas fa-upload"></i>Import</button>
+          <button class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete (selected)</button>
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div class="card" id="main-form">
+          <div class="card-body">
+            <form action="/">
+              <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group row text-left text-sm-right">
+                    <label for="inputEmail3" class="col-sm-4 col-form-label">Product name</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Product name">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group row text-left text-sm-right">
+                    <label for="inputEmail3" class="col-sm-4 col-form-label">Strore</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Strore">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group row text-left text-sm-right">
+                    <label for="inputEmail3" class="col-sm-4 col-form-label">Category</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Category">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group row text-left text-sm-right">
+                    <label for="inputEmail3" class="col-sm-4 col-form-label">Warehouse</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Warehouse">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary"><i class="fas fa-search"></i>Search</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card" id="main-table">
+          <div class="card-body">
+
+            <div class="mw-100" id="wrap-main-table" style="overflow-x: scroll">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col" class="text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <th scope="col">Picture</th>
+                    <th scope="col">Product name</th>
+                    <th scope="col">SKU</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock quantity</th>
+                    <th scope="col">Product type</th>
+                    <th scope="col">Published</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="align-middle text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <td>
+                      <img src="img/placeholder.png" class="img-fluid border" alt="Responsive image">
+                    </td>
+                    <td class="align-middle">Lorem ipsum dolor</td>
+                    <td class="align-middle">PG_DF_D45</td>
+                    <td class="align-middle">$100</td>
+                    <td class="align-middle">23</td>
+                    <td class="align-middle">Simple</td>
+                    <td class="align-middle text-center"><i class="fas fa-check fa-lg sign-published"></i></td>
+                    <td class="align-middle">
+                      <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i>Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <td>
+                      <img src="img/placeholder.png" class="img-fluid border" alt="Responsive image">
+                    </td>
+                    <td class="align-middle">Lorem ipsum dolor</td>
+                    <td class="align-middle">PG_DF_D45</td>
+                    <td class="align-middle">$100</td>
+                    <td class="align-middle">23</td>
+                    <td class="align-middle">Simple</td>
+                    <td class="align-middle text-center"><i class="fas fa-check fa-lg sign-published"></i></td>
+                    <td class="align-middle">
+                      <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i>Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <td>
+                      <img src="img/placeholder.png" class="img-fluid border" alt="Responsive image">
+                    </td>
+                    <td class="align-middle">Lorem ipsum dolor</td>
+                    <td class="align-middle">PG_DF_D45</td>
+                    <td class="align-middle">$100</td>
+                    <td class="align-middle">23</td>
+                    <td class="align-middle">Simple</td>
+                    <td class="align-middle text-center"><i class="fas fa-check fa-lg sign-published"></i></td>
+                    <td class="align-middle">
+                      <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i>Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <td>
+                      <img src="img/placeholder.png" class="img-fluid border" alt="Responsive image">
+                    </td>
+                    <td class="align-middle">Lorem ipsum dolor</td>
+                    <td class="align-middle">PG_DF_D45</td>
+                    <td class="align-middle">$100</td>
+                    <td class="align-middle">23</td>
+                    <td class="align-middle">Simple</td>
+                    <td class="align-middle text-center"><i class="fas fa-check fa-lg sign-published"></i></td>
+                    <td class="align-middle">
+                      <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i>Edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle text-center"><input type="checkbox" name="selected" value="0"></th>
+                    <td>
+                      <img src="img/placeholder.png" class="img-fluid border" alt="Responsive image">
+                    </td>
+                    <td class="align-middle">Lorem ipsum dolor</td>
+                    <td class="align-middle">PG_DF_D45</td>
+                    <td class="align-middle">$100</td>
+                    <td class="align-middle">23</td>
+                    <td class="align-middle">Simple</td>
+                    <td class="align-middle text-center"><i class="fas fa-check fa-lg sign-published"></i></td>
+                    <td class="align-middle">
+                      <button class="btn btn-secondary"><i class="fas fa-pencil-alt"></i>Edit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- End : Main Content (Right) -->
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
